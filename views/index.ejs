@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title> Jason's Portfolio </title>
+    <style>
+        body{
+            width:100%;
+            height:auto;
+            background: url('metal2.jpg') no-repeat center;
+            background-position: 50% 50%;
+            background-size: 100% cover!important;
+            overflow:hidden;
+            background-color: #c4c4c4a6;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration-line: underline;
+        }
+        .links{
+            color: #664bff;
+        }
+        .topnav {
+            background-color: #bababab3;
+            text-align: center;
+            padding-right: 5%;
+            margin-right: 2%;
+            margin-left: 2%;
+        }
+        .link{
+            padding-left: 5%;
+        }
+        .active{
+            text-align: center;
+            padding-top: 5%; 
+        }
+        .header{
+            color: black;
+            margin-left: 30%;
+            margin-right: 30%;
+            background-color: #8282826e;
+            margin-bottom: 5%;
+            font-size: 200%;
+            border-radius: 50%;
+        }
+        .contact{
+            border: solid;
+            background-color: #fbfbfb94;
+            border-top-left-radius: 0%;
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-bottom: 2%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="topnav">
+        <a class="link" href="about">About</a>
+        <a class="link" href="contact">Contact</a>
+    </nav>
+
+    <div class="active">
+        <header class="header">
+            <%= person.firstName %> <%= person.lastName %>
+        </header>
+        <div class="contact">
+            <p>A developer based in San Diego.</p>
+            <p>Feel free to look around. I show case a few of my recent projects <a class="links" href="about">here.</a></p>
+            <div>Remeber to <a class="links" href="contact"> contact me!</a></div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title>Contact Jason</title>
+    <style>
+        body{
+            background-image: url('metal3.jpg');
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: center;
+            background-color: #7e7e7e
+        }        
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration-line: underline;
+        }
+        .topnav {
+            background-color: #b3aeae;
+            text-align: center;
+            padding-right: 5%;
+            margin-left: 17%;
+            margin-right: 17%;
+        }
+        .link{
+            padding-left: 5%;
+        }
+        .container{
+            padding-top: 5%;
+        }
+        .contact{
+            text-align: center;
+            margin-left: 25%;
+            margin-right: 25%;
+            border: solid;
+        }
+        .first-name{
+            background-color: #d6cfcfba;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        .last-name{
+            background-color: #b9b9b9ba;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        .email{
+            background-color: #a9a9a9ba;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+        .button{
+            background-color: #6d6d6dc2;
+            padding-top: 5%;
+            padding-bottom: 5%;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="topnav">
+        <a class="link" href="about">About</a>
+        <a class="link" href="/">Home</a>
+    </nav>
+
+    <div class="container">
+        <form action="/thanks" method="POST" name="contact" class="contact">
+            <div class="first-name">
+                <label for="firstName">First Name:</label>
+                <input id="firstName" name="firstName" type="text">
+            </div>
+
+            <div class="last-name">
+                <label for="lastName">Last Name:</label>
+                <input id="lastName" name="lastName" type="text">
+            </div>
+
+            <div class="email">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="text">
+            </div>
+
+            <div class="button">
+                <input type="submit" value="submit"/>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
