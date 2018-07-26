@@ -15,10 +15,6 @@ app.set('views', './views');
 
 app.set('view engine', 'ejs');
 
-app.listen(PORT, () => {
-    console.log('listening on port 8080')
-});
-
 app.get('/', (req, res) => {
     const data = {
         person: {
@@ -53,4 +49,8 @@ app.post('/thanks', (req, res) => {
     });
 
     res.render('thanks', { contact: req.body});
+});
+
+app.listen(PORT, () => {
+    console.log('listening on port 8080')
 });
