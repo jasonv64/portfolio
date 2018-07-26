@@ -3,9 +3,10 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const FormData = require('form-data');
 const app = express();
+const PORT = process.env.PORT || 8080;
 
 app.use(morgan('dev'));
-app.use(express.static('public'))
+app.use(express.static("public"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -13,6 +14,10 @@ app.use(express.static("public"));
 app.set('views', './views');
 
 app.set('view engine', 'ejs');
+
+// app.listen(PORT, () => {
+//     console.log('listening on port 8080')
+// });
 
 app.get('/', (req, res) => {
     const data = {
