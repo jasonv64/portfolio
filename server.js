@@ -1,4 +1,4 @@
-const express =  require('express');
+const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const FormData = require('form-data');
@@ -6,10 +6,10 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 app.use(morgan('dev'));
-app.use(express.static("public"));
+app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public"));
+
 
 app.set('views', './views');
 
@@ -30,6 +30,30 @@ app.get('/contact', (req, res) => {
     res.render('contact');
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects');
+})
+
+app.get('/change', (req, res) => {
+    res.render('./projects/change');
+})
+
+app.get('/lyricslive', (req, res) => {
+    res.render('./projects/hackathon');
+})
+
+app.get('/vstda', (req, res) => {
+    res.render('./projects/vstda');
+})
+
+app.get('/topspots', (req, res) => {
+    res.render('./projects/sdtopspots');
+})
+
+app.get('/mortgage', (req, res) => {
+    res.render('./projects/mortgage');
+})
+
 app.get('/about', (req, res) => {
     res.render('about');
 })
@@ -45,10 +69,10 @@ app.post('/thanks', (req, res) => {
     data.append('TimeStamp', Date());
 
     const config = { headers: { 'Content-Type': 'multipart/form-data' } }
-    data.submit(url, function(err, res) {
+    data.submit(url, function (err, res) {
     });
 
-    res.render('thanks', { contact: req.body});
+    res.render('thanks', { contact: req.body });
 });
 
 app.listen(PORT, () => {
