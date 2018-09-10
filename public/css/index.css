@@ -8,11 +8,14 @@ header {
 }
 
 a {
-    padding-right: 5%
+    padding-right: 5%;
+    text-decoration: none;
+    color: black;    
 }
 
 i {
     margin-right: 40%;
+    
 }
 
 .topnav {
@@ -23,6 +26,7 @@ i {
     border: solid;
     background-color: white;
     border-radius: 5px;
+    margin: .65%;
 }
 
 .active-index {
@@ -37,8 +41,9 @@ i {
     bottom: 0;
     border: solid;
     position: absolute;
-    width: 98%;
+    width: 100%;
     margin-bottom: 1%; 
+    background-color: white;
 }
 
 

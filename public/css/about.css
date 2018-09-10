@@ -7,7 +7,9 @@ header {
 }
 
 a {
-    padding-right: 5%
+    padding-right: 5%;
+    text-decoration: none;
+    color: black;
 }
 
 i {
@@ -22,6 +24,7 @@ i {
     border: solid;
     background-color: white;
     border-radius: 5px;
+    margin: .65%;
 }
 
 .footer {

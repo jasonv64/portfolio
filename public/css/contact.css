@@ -1,5 +1,4 @@
 body {
-    background-color: #AEECEF;
     text-align: center;
 }
 
@@ -8,7 +7,9 @@ header {
 }
 
 a {
-    padding-right: 5%
+    padding-right: 5%;
+    text-decoration: none;
+    color: black;
 }
 
 i {
@@ -29,6 +30,6 @@ i {
     bottom: 0;
     border: solid;
     position: absolute;
-    width: 98%;
+    width: 100%;
     margin-bottom: 1%; 
 }
