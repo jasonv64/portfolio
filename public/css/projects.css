@@ -9,6 +9,7 @@ body {
 
 header {
     margin: 5% 0 1% 0%;
+    font-family: cursive;
 }
 
 a {
@@ -35,15 +36,19 @@ img {
     background-color: white;
     border-radius: 5px;
     margin: .65%;
+    font-family: fantasy;
 }
 
 .footer {
+    border-radius: 5px; 
+    margin-left: .75%;
     bottom: 0;
     border: solid #333;
     position: absolute;
     width: 98%;
     margin-bottom: 1%; 
     background-color: white;
+    font-family: fantasy;
 }
 
 .box-projects {
@@ -51,6 +56,7 @@ img {
     margin-left: 12.5%;
     width: 75%;
     background-color: #8c8c8c5c;
+    font-family: cursive;
 }
 
 .ref {
@@ -66,6 +72,16 @@ img {
     position: absolute;
 }
 
+.live-link {
+    margin-top: 5vh;
+    width: 40%;
+    margin-left: 55%;
+    border: solid;
+    border-radius: 1vh;
+    background-color: white;
+    font-family: cursive;
+}
+
 .description {
     margin-top: 5vh;
     width: 40%;
@@ -73,6 +89,7 @@ img {
     border: solid;
     border-radius: 1vh;
     background-color: white;
+    font-family: cursive;
 }
 
 #box {

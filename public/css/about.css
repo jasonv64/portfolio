@@ -26,19 +26,24 @@ i {
     background-color: white;
     border-radius: 5px;
     margin: .65%;
+    font-family: fantasy;
 }
 
 .footer {
+    border-radius: 5px; 
+    margin-left: .75%;
     bottom: 0;
     border: solid #333;
     position: absolute;
     width: 98%;
     margin-bottom: 1%; 
+    font-family: fantasy;
 }
 
 .about-me {
   margin-top: 5vh;
   padding: 0 25vh;
+  font-family: cursive;
 }
 
 .fixed {

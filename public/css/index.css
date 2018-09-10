@@ -6,6 +6,8 @@ body {
 header {
     margin: 0%;
     color: #ffffff;
+    font-size: 20;
+    font-family: cursive;
 }
 
 a {
@@ -28,15 +30,16 @@ i {
     background-color: white;
     border-radius: 5px;
     margin: .65%;
+    font-family: fantasy;
 }
 
 .active-index {
-    margin-top: 5%;
-    background-color: #bebebe38;
+    margin-top: 20%;
 }
 
 .about-me {
     margin-top: 5vh;
+    font-family: cursive;
     color: #ffffff;
 }
 
@@ -53,6 +56,7 @@ i {
     width: 98%;
     margin-bottom: 1%; 
     background-color: white;
+    font-family: fantasy;
 }
 
 
