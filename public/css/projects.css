@@ -23,8 +23,15 @@ i {
 }
 
 img {
+    width: 75vh;
     height: 35vh;
     margin: 5% 5%;
+}
+
+.pics {
+    height: 25vh;
+    width: 65vh;
+    margin-bottom: 0%;
 }
 
 .topnav {
@@ -91,6 +98,7 @@ img {
     background-color: white;
     font-family: cursive;
     text-align: left;
+    line-height: 3vh;
 }
 
 #box {

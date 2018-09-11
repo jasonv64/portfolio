@@ -37,12 +37,23 @@ i {
     position: absolute;
     width: 98%;
     margin-bottom: 1%; 
+    background-color: #fff;
     font-family: fantasy;
 }
 
 .about-me {
   margin-top: 5vh;
-  padding: 0 25vh;
+  padding: 0 55vh;
+  font-family: cursive;
+}
+
+.stuff-i-like{
+  padding: 5vh 55vh;
+  font-family: cursive;
+}
+
+.hire-me {
+  padding: 0vh 55vh;
   font-family: cursive;
 }
 
@@ -74,8 +85,7 @@ i {
 .mountain {
   border: 40vh solid transparent;
   border-bottom-color: #333;
-  left: 10em;
-  z-index:3; 
+  left: 10em; 
 }
 
 .mountain:before,.mountain:after {
