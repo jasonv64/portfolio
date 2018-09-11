@@ -43,18 +43,27 @@ i {
 
 .about-me {
   margin-top: 5vh;
-  padding: 0 55vh;
+  margin: 5vh 55vh 0 55vh;
   font-family: cursive;
+  background-color: #ffffff40;
+  border: solid;
+  border-radius: 4px;
 }
 
 .stuff-i-like{
-  padding: 5vh 55vh;
+  margin: 5vh 55vh;
   font-family: cursive;
+  background-color: #ffffff40;
+  border: solid;
+  border-radius: 4px;  
 }
 
 .hire-me {
-  padding: 0vh 55vh;
+  margin: 0vh 55vh;
   font-family: cursive;
+  background-color: #ffffff40;
+  border: solid;
+  border-radius: 4px;
 }
 
 .fixed {
