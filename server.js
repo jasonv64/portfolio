@@ -38,8 +38,8 @@ app.get('/calendar', (req, res) => {
     res.render('./projects/calendar');
 })
 
-app.get('/app', (req, res) => {
-    res.render('./projects/app');
+app.get('/portal', (req, res) => {
+    res.render('./projects/portal');
 })
 
 app.get('/vstda', (req, res) => {
