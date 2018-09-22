@@ -13,7 +13,7 @@
         <a class="link" href="contact">Contact</a>
     </nav>
     <div class="img">
-        <img class="yosemite" src="/images/me.JPG"/>
+        <img class="pine-tree" src="/images/tree.png"/>
     </div>
 </div>
 
@@ -25,5 +25,19 @@
             Linkedin
         </a>
     </nav>
+    <script type="text/javascript">
+
+        let image = document.images[0];
+        let bigImage = document.createElement("img");
+
+        bigImage.onload = function() {
+            image.src = this.src;
+            image.className = "yosemite";
+        }
+
+        setTimeout(function() {
+            bigImage.src = "/images/me.JPG";
+        }, 1000)
+    </script>
 </body>
 </html>
