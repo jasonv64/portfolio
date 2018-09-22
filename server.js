@@ -54,6 +54,10 @@ app.get('/mortgage', (req, res) => {
     res.render('./projects/mortgage');
 })
 
+app.get('/dowhoppin', (req, res) => {
+    res.render('dowhoppin')
+})
+
 app.get('/about', (req, res) => {
     res.render('about');
 })

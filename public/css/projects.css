@@ -101,6 +101,20 @@ img {
     line-height: 3vh;
 }
 
+.img {
+    transform: rotate(-90deg);
+}
+
+.yosemite {
+    box-shadow: -3px 3px #9fcaef;
+    border: solid;
+    border-radius: 4px;
+    width: 75vh;
+    height: 55vh;
+    margin: 12% 5%;
+
+}
+
 #box {
 	background: linear-gradient(-45deg, black 0%, black 50%,
 			                                white 50%, white 100%);
