@@ -2,9 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "My personal portfolio ",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,6 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "css": "^2.2.4",
-    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "form-data": "^2.3.2",
     "morgan": "^1.9.0"
