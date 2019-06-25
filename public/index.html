@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' />
     <link rel='stylesheet' type="text/css" href='./style.css'/>
     <title>Jason</title>
@@ -47,7 +48,7 @@
     <section id="hero">
         <div class="card bg-dark text-white">
             <img src="./images/fallsign.png" class="card-img" alt="...">
-            <div class="card-img-overlay d-flex flex-column align-items-center">
+            <div class="card-img-overlay d-flex flex-column align-items-center welcome">
                 <h5 class="card-title">Welcome</h5>
                 <p class="card-text">
                     I'm
@@ -59,7 +60,18 @@
         </div>
     </section>
     <section id="about">
-<img src="./images/fallsign.png" class="card-img" alt="...">
+        <img src="./images/fallsign.png" class="card-img" alt="...">
     </section>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $(".main-nav").css({ "opacity": "1" })
+                } else {
+                    $(".main-nav").css({ "opacity": ".25" })
+                }
+            })
+        });
+    </script>
 </body>
 </html>
