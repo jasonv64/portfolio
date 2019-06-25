@@ -46,6 +46,29 @@ header {
 
 /* about */
 
+.about-card {
+    padding: 2rem
+}
+
 .about-me-statment {
-    margin: 0 15vw
+    margin: 0 15vw;
+    line-height: 3.5vh;
+}
+
+/* proects */
+
+.sis {
+    height: 75vh;
+}
+
+.wms {
+height: 75vh;
+}
+
+.vstda {
+    height: 75vh;
+}
+
+#card-img {
+    height: 50vh;
 }
