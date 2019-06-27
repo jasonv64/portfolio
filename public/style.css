@@ -72,3 +72,48 @@ height: 75vh;
 #card-img {
     height: 50vh;
 }
+
+/* skills */
+#skills {
+    padding-top: 2vh;
+}
+
+.carousel {
+    height: 50vh;
+}
+
+.carousel-inner {
+    padding-top: 5vh;
+}
+
+.carousel-caption {
+    position: initial;
+}
+
+.carousel-header {
+    color: black;
+}
+
+.carousel-p {
+    color: black;
+}
+
+.carousel-indicators {
+    background-color: #a8a8a896
+}
+
+.img-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-img {
+}
+
+.carousel-control-prev-icon {
+    background-color: #7d7d7dd4;
+}
+
+.carousel-control-next-icon {
+    background-color: #7d7d7dd4;
+}

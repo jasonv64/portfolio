@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' />
     <link rel='stylesheet' type="text/css" href='./style.css'/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Jason</title>
 </head>
 <body>
@@ -100,7 +101,56 @@
         </div>
     </section>
     <section id="skills">
-        
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="carousel-header">Front End</h5>
+                            <p class="carousel-p">Prefer ReactJS</p>
+                        </div>
+                        <div class="img-div">
+                            <img src="./images/icons8-css3-96.png" class="icon-img">
+                            <img src="./images/icons8-html-5-96.png" class="icon-img">
+                            <img src="./images/icons8-javascript-96.png" class="icon-img">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="carousel-header">Back End</h5>
+                            <p class="carousel-p">NodeJS. It is everywhere</p>
+                        </div>
+                        <div class="img-div">
+                            <img src="./images/icons8-css3-96.png" class="icon-img">
+                            <img src="./images/icons8-html-5-96.png" class="icon-img">
+                            <img src="./images/icons8-javascript-96.png" class="icon-img">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="carousel-header">Other Tools</h5>
+                            <p class="carousel-p">Stack over flow has a special place in my heart </p>
+                        </div>
+                        <div class="img-div">
+                            <img src="./images/icons8-css3-96.png" class="icon-img">
+                            <img src="./images/icons8-html-5-96.png" class="icon-img">
+                            <img src="./images/icons8-javascript-96.png" class="icon-img">
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
     </section>
     <script type="text/javascript" src="./src/navbar.js"></script>
 </body>
