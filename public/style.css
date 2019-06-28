@@ -5,6 +5,9 @@ header {
     transition: 2.5s;
     opacity: .25
 }
+
+/* Nav */
+
 .nav-image {
     width: 5.5vw;
     height: 2vw;
@@ -12,6 +15,11 @@ header {
 
 .nav-item {
     padding-left: 2.5vw
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-evenly
 }
 
 /* hero */
@@ -98,8 +106,18 @@ height: 75vh;
     color: black;
 }
 
-.carousel-indicators {
-    background-color: #a8a8a896
+.carousel-indicators li {
+    display: inline-block;
+    width: 3vw;
+    height: 4vh;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #0000ff;
+}
+
+.carousel-indicators .active {
+    outline: red;
 }
 
 .img-div {
@@ -107,12 +125,24 @@ height: 75vh;
     justify-content: space-evenly;
 }
 
-.carousel-control-prev-icon {
-    background-color: #7d7d7dd4;
+.carousel-control-next-icon {
+    background-image: none;
 }
 
-.carousel-control-next-icon {
-    background-color: #7d7d7dd4;
+.carousel-control-prev-icon {
+    background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 55px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: red;
 }
 
 /* contact */
@@ -151,13 +181,17 @@ height: 75vh;
     padding-top: 5vh
 }
 
-#input {
+.input {
     background: #333;
     border: solid #fff 1px;
     border-radius: 4px;  
     padding: .5vh 1vh;  
     letter-spacing: 1px;
     color: #fff;
+}
+
+.form-status {
+    color: whitesmoke;
 }
 
 #form-submit {  
@@ -197,5 +231,6 @@ height: 75vh;
 
 .fab {
     padding-right: 5vw;
-    padding-top: 1.65vh 
+    padding-top: .5vh;
+    color: #000;
 }
