@@ -112,8 +112,8 @@ height: 75vh;
 
 .carousel-indicators li {
     display: inline-block;
-    width: 3vw;
-    height: 4vh;
+    width: 1vw;
+    height: 1vw;
     cursor: pointer;
     border: none;
     border-radius: 50%;
