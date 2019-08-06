@@ -77,6 +77,17 @@ height: 75vh;
     height: 75vh;
 }
 
+.project-link-text {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.project-link {
+    color: rgb(0, 81, 255);
+    padding-left: .75vw; 
+}
+
 #card-img {
     height: 50vh;
 }
