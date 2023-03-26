@@ -240,7 +240,7 @@ function Home() {
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col">
                             <div class="team-member">
                                 <h4>Jason Valadez</h4>
                                 <p class="text-muted">Techy guy</p>
