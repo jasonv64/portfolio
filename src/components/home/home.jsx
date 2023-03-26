@@ -1,15 +1,26 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 function Home() {
     const [showModal, setShowModal] = useState({modal: 0});
+    const [cardColumns, setCardColums] = useState('');
 
     const handleClose = () => setShowModal({modal: 0});
     const handleShow1 = () => setShowModal({modal: 1});
     const handleShow2 = () => setShowModal({modal: 2});    
     const handleShow3 = () => setShowModal({modal: 3});
+
+    useEffect(() => {
+        if (window.innerWidth < 534) {
+            setCardColums('row-cols-2');
+          } else if (window.innerWidth < 1561) {
+            setCardColums('row-cols-2');
+          } else {
+            setCardColums('row-cols-4');
+          }    
+    }, [])
 
     return(
         <div>
@@ -77,36 +88,36 @@ function Home() {
                             <h3 class="section-subheading text-muted">Latest projects.</h3>
                         </div>
                     </div>
-                    <div class="row row-cols-3">
-                        <Button className="col" onClick={handleShow1}>
+                    <div class={`row ${cardColumns}`}>
+                        <Button className="col modal-trigger-button" onClick={handleShow1}>
                             <Card>
                                 <Card.Img variant="top" src="https://res.cloudinary.com/dppkrg7h5/image/upload/v1679685436/not-sw/sunwashers-site_qkbi9y.png" />
                                 <Card.Body>
-                                    <Card.Title className="card-title">Sunwashers Corp</Card.Title>
+                                    <Card.Title className="card-title">Sunwashers</Card.Title>
                                     <Card.Text className="card-text">
                                     <i> Business Website </i>
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Button>
-                        <Button className="col" onClick={handleShow2}>
-                            <Card>
-                                <Card.Img variant="top" src="https://res.cloudinary.com/dppkrg7h5/image/upload/v1679687783/not-sw/legiswap-site_ef9v70.png" />
-                                <Card.Body>
-                                    <Card.Title className="card-title">Ledgiswap</Card.Title>
-                                    <Card.Text className="card-text">
-                                    <i> Crypto-powered merchant site </i>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Button>
-                        <Button onClick={handleShow3}>
+                        <Button className="modal-trigger-button col" onClick={handleShow3}>
                             <Card>
                                 <Card.Img variant="top" src="https://res.cloudinary.com/dppkrg7h5/image/upload/v1679691231/not-sw/Screenshot_2023-03-24_135342_fdr6cp.png" />
                                 <Card.Body>
                                     <Card.Title className="card-title">Power Bi</Card.Title>
                                     <Card.Text className="card-text">
                                     <i>Sales Dashboard</i>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Button>
+                        <Button className="col modal-trigger-button" onClick={handleShow2}>
+                            <Card>
+                                <Card.Img variant="top" src="https://res.cloudinary.com/dppkrg7h5/image/upload/v1679687783/not-sw/legiswap-site_ef9v70.png" />
+                                <Card.Body>
+                                    <Card.Title className="card-title">Ledgiswap</Card.Title>
+                                    <Card.Text className="card-text">
+                                    <i> Crypto-powered merchant site </i>
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -224,74 +235,28 @@ function Home() {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
-                            <h2 class="section-heading">Our Amazing Team</h2>
-                            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                            <h2 class="section-heading">Lets connect!</h2>
+                            <h3 class="section-subheading text-muted">Find my socials below</h3>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="team-member">
-                                <h4>Kay Garland</h4>
-                                <p class="text-muted">Lead Designer</p>
+                                <h4>Jason Valadez</h4>
+                                <p class="text-muted">Techy guy</p>
                                 <div class="row social-buttons">
                                     <div className="col">
-                                        <a href="#">
-                                            Twitter
+                                        <a href="https://www.instagram.com/valajaso/">
+                                            Instagram
                                         </a>
                                     </div>
                                     <div className="col">
-                                        <a href="#">
+                                        <a href="https://www.facebook.com/jason.valadez.1238">
                                             FaceBook
                                         </a>
                                     </div>
                                     <div className="col">
-                                        <a href="#">
-                                            Linkedin
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="team-member">
-                                <h4>Larry Parker</h4>
-                                <p class="text-muted">Lead Marketer</p>
-                                <div class="row social-buttons">
-                                    <div className="col">
-                                        <a href="#">
-                                            Twitter
-                                        </a>
-                                    </div>
-                                    <div className="col">
-                                        <a href="#">
-                                            FaceBook
-                                        </a>
-                                    </div>
-                                    <div className="col">
-                                        <a href="#">
-                                            Linkedin
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="team-member">
-                                <h4>Diana Pertersen</h4>
-                                <p class="text-muted">Lead Developer</p>
-                                <div class="row social-buttons">
-                                    <div className="col">
-                                        <a href="#">
-                                            Twitter
-                                        </a>
-                                    </div>
-                                    <div className="col">
-                                        <a href="#">
-                                            FaceBook
-                                        </a>
-                                    </div>
-                                    <div className="col">
-                                        <a href="#">
+                                        <a href="https://www.linkedin.com/in/jason-valadez-732872227/">
                                             Linkedin
                                         </a>
                                     </div>
@@ -301,7 +266,9 @@ function Home() {
                     </div>
                     <div class="row">
                         <div class="modal-project-info">
-                            <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                            <p class="large text-muted">
+                                Lets talk about tech, nature, music or your cool ideas! Looking forward to connecting with ya.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -312,8 +279,8 @@ function Home() {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 text-center">
-                            <h2 class="section-heading">Contact Us</h2>
-                            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                            <h2 class="section-heading">Contact Me</h2>
+                            <h3 class="section-subheading text-muted">Send me an email.</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -360,17 +327,17 @@ function Home() {
                             <div class="col">
                                  <div class="row social-buttons">
                                     <div className="col">
-                                        <a href="#">
-                                            Twitter
+                                        <a href="https://www.instagram.com/valajaso/">
+                                            Instagram
                                         </a>
                                     </div>
                                     <div className="col">
-                                        <a href="#">
+                                        <a href="https://www.facebook.com/jason.valadez.1238">
                                             FaceBook
                                         </a>
                                     </div>
                                     <div className="col">
-                                        <a href="#">
+                                        <a href="https://www.linkedin.com/in/jason-valadez-732872227/">
                                             Linkedin
                                         </a>
                                     </div>

@@ -38,6 +38,11 @@ body {
     font-weight: 500;
 }
 
+.modal-trigger-button {
+    margin-bottom: 5vh;
+    background-color: white !important;
+}
+
 .modal-image {
     height: 50vh;
     width: 75vh;
@@ -50,6 +55,12 @@ body {
     margin: auto;
     margin-top: 5vh;
     text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    .modal-project-info {
+        width: auto;
+    }
 }
 
 .modal-footer {
