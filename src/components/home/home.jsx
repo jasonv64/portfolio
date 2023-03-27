@@ -349,10 +349,10 @@ function Home() {
                         <div class="col-md-4">
                             <div class="quicklinks row">
                                 <div className="col">
-                                    <a href="#">Privacy Policy</a>
+                                    <a href="https://www.linkedin.com/in/jason-valadez-732872227/">Privacy Policy</a>
                                 </div>
                                 <div className="col">
-                                    <a href="#">Terms of Use</a>
+                                    <a href="https://www.linkedin.com/in/jason-valadez-732872227/">Terms of Use</a>
                                 </div>
                             </div>
                         </div>
