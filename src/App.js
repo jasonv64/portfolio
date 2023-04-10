@@ -2,6 +2,7 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import Navigation from './components/navBar/navBar';
 import Home from './components/home/home';
+import Blog from './components/blog/blog';
 import ErrorPage from "./components/ErrorPage/ErrorPage.jsx";
 
 import './css/output.css';
@@ -22,6 +23,10 @@ function App() {
                     {
                       path: "home",
                       element: <Home/>
+                    },
+                    {
+                      path: "blog",
+                      element: <Blog />
                     }
                   ],
             },
